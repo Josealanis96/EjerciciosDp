@@ -5,8 +5,65 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Practica_2_UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Practica #2" Height="320" Width="320">
+
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="5,10,0,0"/>
+            <Setter Property="Width" Value="150"/>
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="Margin" Value="5,10,0,0"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Margin" Value="15,20,0,0"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Name="IdDistribuidorLabel" Content="Id:"/>
+        <TextBox Name="IdDistribuidorText" Grid.Column="1"/>
+
+        <Label Name="NombresLabel" Grid.Row="1" Content="Nombres:"/>
+        <TextBox Name="NombresText" Grid.Row="1" Grid.Column="1"/>
+
+        <Label Name="ApellidoPaternoLabel" Grid.Row="2" Content="Apellido Paterno:"/>
+        <TextBox Name="ApellidoPaternoText" Grid.Row="2" Grid.Column="1"/>
+
+        <Label Name="ApellidoMaternoLabel" Grid.Row="3" Content="Apellido Materno:"/>
+        <TextBox Name="ApellidoMaternoText" Grid.Row="3" Grid.Column="1"/>
+
+        <Label Name="CalleLabel" Grid.Row="4" Content="Calle:"/>
+        <TextBox Name="CalleText" Grid.Row="4" Grid.Column="1"/>
+
+        <Label Name="NumeroCasaLabel" Grid.Row="5" Content="Numero de casa:"/>
+        <TextBox Name="NumeroCasaText" Grid.Row="5" Grid.Column="1"/>
+
+        <Label Name="ColoniaLabel" Grid.Row="6" Content="Colonia:"/>
+        <TextBox Name="ColoniaText" Grid.Row="6" Grid.Column="1"/>
+
+        <StackPanel Grid.Row="7" Grid.ColumnSpan="2" Orientation="Horizontal">
+            <Button Name="GuardarBtn" Grid.Row="7" Content="Guardar"/>
+            <Button Name="ConsultarBtn" Grid.Row="7" Grid.Column="1" Content="Consultar"/>
+        </StackPanel>
     </Grid>
 </Window>

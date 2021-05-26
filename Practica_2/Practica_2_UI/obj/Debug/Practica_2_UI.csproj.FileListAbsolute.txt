@@ -1,7 +1,6 @@
 C:\Users\Jose Alanis\source\repos\Josealanis96\EjerciciosDp\Practica_2\Practica_2_UI\bin\Debug\Practica_2_UI.exe.config
 C:\Users\Jose Alanis\source\repos\Josealanis96\EjerciciosDp\Practica_2\Practica_2_UI\bin\Debug\Practica_2_UI.exe
 C:\Users\Jose Alanis\source\repos\Josealanis96\EjerciciosDp\Practica_2\Practica_2_UI\bin\Debug\Practica_2_UI.pdb
-C:\Users\Jose Alanis\source\repos\Josealanis96\EjerciciosDp\Practica_2\Practica_2_UI\obj\Debug\Practica_2_UI.csprojAssemblyReference.cache
 C:\Users\Jose Alanis\source\repos\Josealanis96\EjerciciosDp\Practica_2\Practica_2_UI\obj\Debug\MainWindow.g.cs
 C:\Users\Jose Alanis\source\repos\Josealanis96\EjerciciosDp\Practica_2\Practica_2_UI\obj\Debug\App.g.cs
 C:\Users\Jose Alanis\source\repos\Josealanis96\EjerciciosDp\Practica_2\Practica_2_UI\obj\Debug\Practica_2_UI_MarkupCompile.cache
