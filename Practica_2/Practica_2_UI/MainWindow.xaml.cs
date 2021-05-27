@@ -28,5 +28,10 @@ namespace Practica_2_UI
             }
         }
 
+        private void ConsultarBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ConsultarDistribuidor consultar = new ConsultarDistribuidor();
+            consultar.Show();
+        }
     }
 }
