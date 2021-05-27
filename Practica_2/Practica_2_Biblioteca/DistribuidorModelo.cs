@@ -8,7 +8,7 @@ namespace Practica_2_Biblioteca
 {
     public class DistribuidorModelo
     {
-        public string IdDistribuidor { get; set; }
+        public string DistribuidorId { get; set; }
         public DateTime FechaRegistro { get; set; }
         public string Nombres { get; set; }
         public string ApellidoPaterno { get; set; }
@@ -17,9 +17,9 @@ namespace Practica_2_Biblioteca
         public int NumeroCasa { get; set; }
         public string Colonia { get; set; }
 
-        public DistribuidorModelo(string idDistribuidor, DateTime fechaRegistro, string nombres, string apellidoPaterno, string apellidoMaterno, string calle, int numeroCasa, string colonia)
+        public DistribuidorModelo(string distribuidorId, DateTime fechaRegistro, string nombres, string apellidoPaterno, string apellidoMaterno, string calle, int numeroCasa, string colonia)
         {
-            IdDistribuidor = idDistribuidor;
+            DistribuidorId = distribuidorId;
             FechaRegistro = fechaRegistro;
             Nombres = nombres;
             ApellidoPaterno = apellidoPaterno;
@@ -27,6 +27,19 @@ namespace Practica_2_Biblioteca
             Calle = calle;
             NumeroCasa = numeroCasa;
             Colonia = colonia;
+        }
+
+        public DistribuidorModelo(string nombre_Completo, string calle, int numero_de_casa, string colonia)
+        {
+            Nombres = nombre_Completo;
+            Calle = calle;
+            NumeroCasa = numero_de_casa;
+            Colonia = colonia;
+        }
+
+        public DistribuidorModelo(string distribuidorId)
+        {
+            DistribuidorId = distribuidorId;
         }
     }
 }
