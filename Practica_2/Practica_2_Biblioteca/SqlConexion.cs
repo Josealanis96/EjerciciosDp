@@ -17,7 +17,7 @@ namespace Practica_2_Biblioteca
             using (IDbConnection conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["Practica#2"].ToString()))
             {
                 var p = new DynamicParameters();
-                p.Add("@IdDistribuidor", distribuidor.IdDistribuidor);
+                p.Add("@DistribuidorId", distribuidor.DistribuidorId);
                 p.Add("@FechaRegistro", distribuidor.FechaRegistro);
                 p.Add("@Nombres", distribuidor.Nombres);
                 p.Add("@ApellidoPaterno", distribuidor.ApellidoPaterno);
@@ -28,7 +28,18 @@ namespace Practica_2_Biblioteca
 
                 conexion.Execute("dbo.spDistribuidor_Insertar", p, commandType: CommandType.StoredProcedure);
             }
-
         }
+
+            public IList<DistribuidorModelo> ConsultarDistribuidor(DistribuidorModelo distribuidor)
+            {
+                IList<DistribuidorModelo> list;
+                using (IDbConnection conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["Practica#2"].ToString()))
+                {
+                    var p = new DynamicParameters();
+                    p.Add("@DistribuidorId", distribuidor.DistribuidorId);
+                    list = conexion.Query<DistribuidorModelo>("dbo.spDistribuidor_Consultar", p, commandType: CommandType.StoredProcedure).ToList();
+                }
+                return list;
+            }
     }
 }
