@@ -64,7 +64,7 @@
         <TextBox Name="ColoniaText" Grid.Row="6" Grid.Column="1"/>
 
         <StackPanel Grid.Row="7" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button Name="GuardarBtn" Grid.Row="7" Content="Guardar"/>
+            <Button Name="GuardarBtn" Grid.Row="7" Content="Guardar" Click="GuardarBtn_Click"/>
             <Button Name="ConsultarBtn" Grid.Row="7" Grid.Column="1" Content="Consultar"/>
         </StackPanel>
     </Grid>

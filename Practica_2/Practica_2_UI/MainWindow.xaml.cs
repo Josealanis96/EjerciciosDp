@@ -1,17 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using Practica_2_Biblioteca;
 
 namespace Practica_2_UI
 {
@@ -24,5 +13,20 @@ namespace Practica_2_UI
         {
             InitializeComponent();
         }
+
+        private void GuardarBtn_Click(object sender, RoutedEventArgs e)
+        {
+            SqlConexion sql = new SqlConexion();
+            try
+            {
+                DistribuidorModelo distribuidor = new DistribuidorModelo(IdDistribuidorText.Text, DateTime.Now, NombresText.Text, ApellidoPaternoText.Text, ApellidoMaternoText.Text, CalleText.Text, Convert.ToInt32(NumeroCasaText.Text), ColoniaText.Text);
+                sql.InsertarDistribuidor(distribuidor);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
     }
 }
