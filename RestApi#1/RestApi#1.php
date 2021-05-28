@@ -31,6 +31,8 @@ function getJson()
 }
 ?>
 
+<title>RestApi#1</title>
+
 <form method="get">
 	<input type="submit" name="jsonBtn" value="Imprimir respuesta Json por consola y generar archivo Json">
 </form>
