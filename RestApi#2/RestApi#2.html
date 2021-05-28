@@ -1,6 +1,9 @@
 <title>RestApi#2</title>
 <body>
 <script>
+
+	/*Funcion para conseguir una respuesta Json y verificar qué objetos Json tienen una propiedad con color distinto a "red",
+  	  eliminando del arreglo las que cumplan esta condicional*/. 
 	function getJson()
 	{
 	fetch('https://my-json-server.typicode.com/dp-danielortiz/dptest_jsonplaceholder/items')
@@ -17,6 +20,7 @@
 			}
 		}
 
+		//El arreglo final se pasa a un string, se parsea el string a Json y se imprime en HTML.
 		var lista_a_string = JSON.stringify(Object.assign({}, lista_objetos));
 		var string_a_json = JSON.parse(lista_a_string);
 		document.getElementById("json").textContent = JSON.stringify(string_a_json, null, 2);
@@ -24,6 +28,8 @@
 	}
 
 </script>
+
 <button type="button" onclick="getJson()">Imprimir respuesta Json en HTML</button>
 <pre id="json"></pre>
+
 </body>
