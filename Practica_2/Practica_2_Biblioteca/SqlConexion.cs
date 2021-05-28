@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.Configuration;
 using System.Data.SqlClient;
@@ -12,6 +9,8 @@ namespace Practica_2_Biblioteca
 {
     public class SqlConexion
     {
+
+        //Metodo para insertar un distribuidor nuevo tomando los valores en las propiedades del constructor y ejecutandolos en el procedimiento almacenado en bd.
         public void InsertarDistribuidor(DistribuidorModelo distribuidor)
         {
             using (IDbConnection conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["Practica#2"].ToString()))
@@ -30,7 +29,8 @@ namespace Practica_2_Biblioteca
             }
         }
 
-            public IList<DistribuidorModelo> ConsultarDistribuidor(DistribuidorModelo distribuidor)
+        //Metodo para consultar un distribuidor existente tomando el valor id en las propiedades del constructor y ejecutandolos en el procedimiento almacenado en bd.
+        public IList<DistribuidorModelo> ConsultarDistribuidor(DistribuidorModelo distribuidor)
             {
                 IList<DistribuidorModelo> list;
                 using (IDbConnection conexion = new SqlConnection(ConfigurationManager.ConnectionStrings["Practica#2"].ToString()))

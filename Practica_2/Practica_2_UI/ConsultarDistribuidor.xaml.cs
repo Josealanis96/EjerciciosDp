@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Windows;
 using Practica_2_Biblioteca;
 
@@ -16,6 +14,8 @@ namespace Practica_2_UI
             InitializeComponent();
         }
 
+        /* Metodo utilizado para consultar el distribuidor a partir del id ingresado en el campo,
+           ejecutando un procedimiento almacenado en base a esto*/ 
         private void BuscarBtn_Click(object sender, RoutedEventArgs e)
         {
             SqlConexion sql = new SqlConexion();
