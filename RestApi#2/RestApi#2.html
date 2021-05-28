@@ -1,0 +1,29 @@
+<title>RestApi#2</title>
+<body>
+<script>
+	function getJson()
+	{
+	fetch('https://my-json-server.typicode.com/dp-danielortiz/dptest_jsonplaceholder/items')
+	.then(respuesta_json => respuesta_json.json())
+	.then(info_json => { 
+		var total_objetos = Object.entries(info_json).length; 
+		var lista_objetos = Object.values(info_json);
+
+		for (var i=total_objetos -1; i>=0; i--)
+		{
+			if(info_json[i]['color'] != "red")
+			{
+				lista_objetos.splice(i, 1);
+			}
+		}
+
+		var lista_a_string = JSON.stringify(Object.assign({}, lista_objetos));
+		var string_a_json = JSON.parse(lista_a_string);
+		document.getElementById("json").textContent = JSON.stringify(string_a_json, null, 2);
+		});
+	}
+
+</script>
+<button type="button" onclick="getJson()">Imprimir respuesta Json en HTML</button>
+<pre id="json"></pre>
+</body>
