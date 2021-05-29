@@ -1,0 +1,9 @@
+C:\Users\Jose Alanis\Source\Repos\Josealanis96\MovimientosS2Credit\MovimientosS2CreditBiblioteca\bin\x64\Release\netcoreapp3.1\MovimientosS2CreditBiblioteca.deps.json
+C:\Users\Jose Alanis\Source\Repos\Josealanis96\MovimientosS2Credit\MovimientosS2CreditBiblioteca\bin\x64\Release\netcoreapp3.1\MovimientosS2CreditBiblioteca.dll
+C:\Users\Jose Alanis\Source\Repos\Josealanis96\MovimientosS2Credit\MovimientosS2CreditBiblioteca\bin\x64\Release\netcoreapp3.1\MovimientosS2CreditBiblioteca.pdb
+C:\Users\Jose Alanis\Source\Repos\Josealanis96\MovimientosS2Credit\MovimientosS2CreditBiblioteca\obj\x64\Release\netcoreapp3.1\MovimientosS2CreditBiblioteca.csprojAssemblyReference.cache
+C:\Users\Jose Alanis\Source\Repos\Josealanis96\MovimientosS2Credit\MovimientosS2CreditBiblioteca\obj\x64\Release\netcoreapp3.1\MovimientosS2CreditBiblioteca.AssemblyInfoInputs.cache
+C:\Users\Jose Alanis\Source\Repos\Josealanis96\MovimientosS2Credit\MovimientosS2CreditBiblioteca\obj\x64\Release\netcoreapp3.1\MovimientosS2CreditBiblioteca.AssemblyInfo.cs
+C:\Users\Jose Alanis\Source\Repos\Josealanis96\MovimientosS2Credit\MovimientosS2CreditBiblioteca\obj\x64\Release\netcoreapp3.1\MovimientosS2CreditBiblioteca.csproj.CoreCompileInputs.cache
+C:\Users\Jose Alanis\Source\Repos\Josealanis96\MovimientosS2Credit\MovimientosS2CreditBiblioteca\obj\x64\Release\netcoreapp3.1\MovimientosS2CreditBiblioteca.dll
+C:\Users\Jose Alanis\Source\Repos\Josealanis96\MovimientosS2Credit\MovimientosS2CreditBiblioteca\obj\x64\Release\netcoreapp3.1\MovimientosS2CreditBiblioteca.pdb
